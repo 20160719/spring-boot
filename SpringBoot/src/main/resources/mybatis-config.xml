@@ -39,13 +39,13 @@
     </typeHandlers>
     -->
     <!-- Mybatis 分页插件  -->
-    <plugins>
+    <!--<plugins>
         <plugin interceptor="com.github.pagehelper.PageHelper">
             <property name="dialect" value="mysql"/>
             <property name="pageSizeZero" value="true"/>
             <property name="reasonable" value="true"/>
         </plugin>
-    </plugins>
+    </plugins>-->
     
     <!-- mappers  -->
     <!-- 

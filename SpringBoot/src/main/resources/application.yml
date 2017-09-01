@@ -1,15 +1,16 @@
-
 server:
   port: 8080
-  servlet-path: /
-
+  context-path: /
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/nbms?useUnicode=true&amp;characterEncoding=utf-8&useOldAliasMetadataBehavior=true
     username: root
     password: 123456
+    url: jdbc:mysql://localhost:3306/nbms?useUnicode=true&amp;characterEncoding=utf-8&useOldAliasMetadataBehavior=true
 
-mybatis:
- config-location: mybatis-config.xml
- 
+#mybatis:
+#  typeAliasesPackage: com.myself.persistences.entity
+#  configLocation: classpath:/mybatis-config.xml
+#  mapperLocations: classpath:/com/myself/persistences/mapper/../*Mapper.xml
+#  basePackage: com.myself.persistences.mapper
+

@@ -39,11 +39,14 @@
 			<foreach collection="list" item="user" index="index" separator=",">
 				(#{user.account,jdbcType=VARCHAR},
 				 #{user.password,jdbcType=VARCHAR},
+			 	 #{user.userTypeId,jdbcType=VARCHAR},
+				 #{user.userTypeName,jdbcType=VARCHAR},
 				 #{user.userId,jdbcType=VARCHAR},
 				 #{user.userName,jdbcType=VARCHAR},
 				 #{user.userSex,jdbcType=VARCHAR},
 				 #{user.userAge,jdbcType=VARCHAR},
-				 #{user.brithday,jdbcType=VARCHAR})
+				 #{user.birthday,jdbcType=VARCHAR},
+				 #{user.address,jdbcType=VARCHAR})
 			</foreach>
 	</insert>
 	
